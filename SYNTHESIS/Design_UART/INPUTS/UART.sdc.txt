@@ -1,0 +1,35 @@
+create_clock -name clock -period 10 [get_ports clock]
+set_clock_uncertainty 0.1 [get_clocks clock]
+set_false_path -from [get_ports reset_n]
+
+set_input_delay -clock clock -max 2.5 [get_ports send]
+set_input_delay -clock clock -min 0.0 [get_ports send]
+set_input_delay -clock clock -max 2.5 [get_ports {data_in[7] data_in[6] data_in[5] data_in[4] data_in[3] data_in[2] data_in[1] data_in[0]}]
+set_input_delay -clock clock -min 0.0 [get_ports {data_in[7] data_in[6] data_in[5] data_in[4] data_in[3] data_in[2] data_in[1] data_in[0]}]
+set_input_delay -clock clock -max 2.5 [get_ports {baud_rate[1] baud_rate[0]}]
+set_input_delay -clock clock -min 0.0 [get_ports {baud_rate[1] baud_rate[0]}]
+set_input_delay -clock clock -max 2.5 [get_ports {parity_type[1] parity_type[0]}]
+set_input_delay -clock clock -min 0.0 [get_ports {parity_type[1] parity_type[0]}]
+#set_input_delay -clock clock -max 2.5 [get_ports data_tx_w]
+#set_input_delay -clock clock -min 0.0 [get_ports data_tx_w]
+
+set_output_delay -clock clock -max 2.5 [get_ports tx_active_flag]
+set_output_delay -clock clock -min 0.0 [get_ports tx_active_flag]
+set_output_delay -clock clock -max 2.5 [get_ports tx_done_flag]
+set_output_delay -clock clock -min 0.0 [get_ports tx_done_flag]
+
+set_output_delay -clock clock -max 2.5 [get_ports rx_active_flag]
+set_output_delay -clock clock -min 0.0 [get_ports rx_active_flag]
+
+set_output_delay -clock clock -max 2.5 [get_ports rx_done_flag]
+set_output_delay -clock clock -min 0.0 [get_ports rx_done_flag]
+
+set_output_delay -clock clock -max 2.5 [get_ports {data_out[7] data_out[6] data_out[5] data_out[4] data_out[3] data_out[2] data_out[1] data_out[0]}]
+set_output_delay -clock clock -min 0.0 [get_ports {data_out[7] data_out[6] data_out[5] data_out[4] data_out[3] data_out[2] data_out[1] data_out[0]}]
+set_output_delay -clock clock -max 2.5 [get_ports {error_flag[2] error_flag[1] error_flag[0] }]
+set_output_delay -clock clock -min 0.0 [get_ports {error_flag[2] error_flag[1] error_flag[0]}]
+#set_output_delay -clock clock -max 2.5 [get_ports data_tx_w]
+#set_output_delay -clock clock -min 0.0 [get_ports data_tx_w]
+
+#set_multicycle_path 16 -setup -from [get_clocks sys_clk] -to [get_clocks sys_clk]
+#set_multicycle_path 15 -hold  -from [get_clocks sys_clk] -to [get_clocks sys_clk]

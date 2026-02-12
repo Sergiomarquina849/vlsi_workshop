@@ -1,0 +1,38 @@
+#####Specific to SS, 0.72 and -40C PVT####################################################
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_*_0P75}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_*_0P5}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_*_10}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_*_12}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_*_16}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_*_20}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_DEL*}
+
+###### Set as dont use for cells with VDDR power pins #################################### 
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_AOINV*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_ISOFSDPQ_PECO*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_ISOS0CL1*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_ISOS0CL1_PECO*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_ISOS1CL0_P*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_ISOS1CL0_PECO*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_AN2B_PMM*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_AN2B_PSECO*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_BUF_PECO*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_BUF_PS*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_DEL*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_INV_P*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_OR2B_P*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_AOBUF_IW*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_FSB2BDPRBQ*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_ISOS0CL1*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_SRRDPQ*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_SSRRDPQ*}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_INV_ECO*}
+
+#set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_AOINV_*_*}
+#set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_*_0P75}
+
+#########26 December 2024###################################################################
+#Adding set dont use for drive strength 1 for the cell SAEDRVT14_ADDH_1 as this is contributing more delay
+
+#set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_*_1}
+set_dont_use {saed14rvt_ss0p72vm40c/SAEDRVT14_ADDH_1}

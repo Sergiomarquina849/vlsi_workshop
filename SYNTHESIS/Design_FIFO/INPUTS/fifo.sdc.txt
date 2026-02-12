@@ -1,0 +1,40 @@
+create_clock -name wclk -period 1 [get_ports wclk]
+create_clock -name rclk -period 1 [get_ports rclk]
+set_clock_uncertainty 0.05 [get_clocks wclk]
+set_false_path -from [get_ports wrst_n]
+set_false_path -from [get_ports rrst_n]
+
+set_input_delay -clock wclk -max 0.25 [get_ports {wdata[7] wdata[6] wdata[5] wdata[4] wdata[3] wdata[2] wdata[1] wdata[0]}]
+set_input_delay -clock wclk -min 0.0 [get_ports {wdata[7] wdata[6] wdata[5] wdata[4] wdata[3] wdata[2] wdata[1] wdata[0]}]
+set_input_delay -clock wclk -max 0.25 [get_ports winc]
+set_input_delay -clock wclk -min 0.0 [get_ports winc]
+set_input_delay -clock wclk -max 0.25 [get_ports rinc]
+set_input_delay -clock wclk -min 0.0 [get_ports rinc]
+
+#set_input_delay -clock clock -max 2.5 [get_ports data_tx_w]
+#set_input_delay -clock clock -min 0.0 [get_ports data_tx_w]
+
+set_output_delay -clock wclk -max 0.25 [get_ports {rdata[7] rdata[6] rdata[5] rdata[4] rdata[3] rdata[2] rdata[1] rdata[0]}]
+set_output_delay -clock wclk -min 0.0 [get_ports {rdata[7] rdata[6] rdata[5] rdata[4] rdata[3] rdata[2] rdata[1] rdata[0]}]
+set_output_delay -clock wclk -max 0.25 [get_ports wfull]
+set_output_delay -clock wclk -min 0.0 [get_ports wfull]
+
+set_output_delay -clock wclk -max 0.25 [get_ports rempty]
+set_output_delay -clock wclk -min 0.0 [get_ports rempty]
+
+#set_output_delay -clock clock -max 2.5 [get_ports rx_done_flag]
+#set_output_delay -clock clock -min 0.0 [get_ports rx_done_flag]
+
+#set_output_delay -clock clock -max 2.5 [get_ports {data_out[7] data_out[6] data_out[5] data_out[4] data_out[3] data_out[2] data_out[1] data_out[0]}]
+#set_output_delay -clock clock -min 0.0 [get_ports {data_out[7] data_out[6] data_out[5] data_out[4] data_out[3] data_out[2] data_out[1] data_out[0]}]
+#set_output_delay -clock clock -max 2.5 [get_ports {error_flag[2] error_flag[1] error_flag[0] }]
+#set_output_delay -clock clock -min 0.0 [get_ports {error_flag[2] error_flag[1] error_flag[0]}]
+#set_output_delay -clock clock -max 2.5 [get_ports data_tx_w]
+#set_output_delay -clock clock -min 0.0 [get_ports data_tx_w]
+
+#set_multicycle_path 16 -setup -from [get_clocks sys_clk] -to [get_clocks sys_clk]
+#set_multicycle_path 15 -hold  -from [get_clocks sys_clk] -to [get_clocks sys_clk]
+
+
+
+
