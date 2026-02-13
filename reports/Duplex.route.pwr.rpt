@@ -1,0 +1,139 @@
+Scenario Normal_Fast_HighV_HT (mode Normal corner Fast_HighV_HT) is active for setup/hold/leakage_power/dynamic_power/max_transition/max_capacitance analysis.
+Scenario Normal_Slow_LowV_LT (mode Normal corner Slow_LowV_LT) is active for setup/leakage_power/dynamic_power/max_transition/max_capacitance analysis.
+[icc2-lic Fri Feb 13 01:52:41 2026] Command 'report_power' requires licenses
+[icc2-lic Fri Feb 13 01:52:41 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Fri Feb 13 01:52:41 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Fri Feb 13 01:52:41 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Fri Feb 13 01:52:41 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Fri Feb 13 01:52:41 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Fri Feb 13 01:52:41 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Fri Feb 13 01:52:41 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Fri Feb 13 01:52:41 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Fri Feb 13 01:52:41 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Fri Feb 13 01:52:41 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Fri Feb 13 01:52:41 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Fri Feb 13 01:52:41 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Fri Feb 13 01:52:41 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Fri Feb 13 01:52:41 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Fri Feb 13 01:52:41 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Fri Feb 13 01:52:41 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Fri Feb 13 01:52:41 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Fri Feb 13 01:52:41 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : power
+        -significant_digits 2
+Design : Duplex
+Version: U-2022.12-SP3
+Date   : Fri Feb 13 01:52:41 2026
+****************************************
+Information: Activity for scenario Normal_Fast_HighV_HT was cached, no propagation required. (POW-005)
+Information: Activity for scenario Normal_Slow_LowV_LT was cached, no propagation required. (POW-005)
+Mode: Normal
+Corner: Fast_HighV_HT
+Scenario: Normal_Fast_HighV_HT
+Voltage: 0.95
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+Warning: Power table extrapolation (extrapolation mode) for port D on cell Transmitter/Unit1/clock_ticks_reg[0] for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.015545 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell Transmitter/Unit1/clock_ticks_reg[0] for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000458 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port RSTB on cell Transmitter/Unit1/clock_ticks_reg[0] for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.002537 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell Transmitter/Unit1/clock_ticks_reg[0] for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000458 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell Transmitter/Unit1/clock_ticks_reg[0] for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000458 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port QN on cell Transmitter/Unit1/clock_ticks_reg[0] for parameter Cout. Lowest table value = 0.000100, highest table value = 0.008000, value = 0.000000 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port D on cell Transmitter/Unit1/clock_ticks_reg[1] for parameter Tinp. Lowest table value = inf, highest table value = inf, value = 0.016098 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port CLK on cell Transmitter/Unit1/clock_ticks_reg[1] for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000458 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port RSTB on cell Transmitter/Unit1/clock_ticks_reg[1] for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.002537 (POW-046)
+Warning: Power table extrapolation (extrapolation mode) for port Q on cell Transmitter/Unit1/clock_ticks_reg[1] for parameter Tinp. Lowest table value = 0.016000, highest table value = 1.024000, value = 0.000458 (POW-046)
+Note - message 'POW-046' limit (10) exceeded. Remainder will be suppressed.
+Warning: Fall toggles on pin Transmitter/Unit1/clock_ticks_reg[7]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin Transmitter/Unit1/clock_ticks_reg[8]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin Transmitter/Unit1/clock_ticks_reg[9]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin Transmitter/Unit1/clock_ticks_reg[10]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin Transmitter/Unit1/clock_ticks_reg[11]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin Transmitter/Unit1/clock_ticks_reg[12]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin Transmitter/Unit1/baud_clk_reg/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin Transmitter/Unit1/clock_ticks_reg[13]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin Transmitter/Unit3/next_state_reg/QN are impossible given input states; converted to rise toggles. (POW-069)
+Warning: Fall toggles on pin Transmitter/Unit3/stop_count_reg[0]/QN are impossible given input states; converted to rise toggles. (POW-069)
+Note - message 'POW-069' limit (10) exceeded. Remainder will be suppressed.
+
+  Cell Internal Power    = 6.49e+06 pW ( 82.8%)
+  Net Switching Power    = 1.35e+06 pW ( 17.2%)
+Total Dynamic Power      = 7.84e+06 pW (100.0%)
+
+Cell Leakage Power       = 3.38e+09 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             1.33e+07               0.00e+00               0.00e+00               1.33e+07    (  0.4%)        i
+register                 -8.78e+06               2.77e+05               7.76e+08               7.67e+08    ( 22.6%)         
+sequential                1.35e+05               3.79e+02               9.85e+08               9.86e+08    ( 29.1%)         
+combinational             1.87e+06               1.08e+06               1.62e+09               1.62e+09    ( 47.9%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     6.49e+06 pW            1.35e+06 pW            3.38e+09 pW            3.39e+09 pW
+Mode: Normal
+Corner: Slow_LowV_LT
+Scenario: Normal_Slow_LowV_LT
+Voltage: 0.75
+Temperature: -40.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+
+  Cell Internal Power    = 1.07e+07 pW ( 92.7%)
+  Net Switching Power    = 8.41e+05 pW (  7.3%)
+Total Dynamic Power      = 1.15e+07 pW (100.0%)
+
+Cell Leakage Power       = 6.67e+06 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             8.97e+06               0.00e+00               0.00e+00               8.97e+06    ( 49.3%)        i
+register                  3.76e+05               1.70e+05               1.56e+04               5.62e+05    (  3.1%)         
+sequential                6.94e+04               2.35e+02               6.62e+06               6.69e+06    ( 36.8%)         
+combinational             1.28e+06               6.71e+05               3.37e+04               1.98e+06    ( 10.9%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     1.07e+07 pW            8.41e+05 pW            6.67e+06 pW            1.82e+07 pW
+1

@@ -1,0 +1,4 @@
+SELECT timeout fd=4 rc=0 net_errno=0 remain_time=0 timeout=10 total_read=0
+SELECT timeout fd=4 rc=0 net_errno=0 remain_time=0 timeout=10 total_read=0
+SELECT timeout fd=4 rc=0 net_errno=0 remain_time=0 timeout=10 total_read=0
+SELECT timeout fd=4 rc=0 net_errno=0 remain_time=0 timeout=10 total_read=0

@@ -1,0 +1,1560 @@
+ 
+                              IC Compiler II (TM)
+
+                Version U-2022.12-SP3 for linux64 - Apr 18, 2023
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+icc2_shell> open_lib Duplex
+Information: Loading library file '/home/vlsi26/1ds23ec088-413-c2s/pnr/Duplex' (FILE-007)
+Information: Loading library file '/home/vlsi26/1ds23ec088-413-c2s/pnr/CLIBs/saed32rvt_c.ndm' (FILE-007)
+Information: Loading library file '/home/vlsi26/1ds23ec088-413-c2s/pnr/CLIBs/saed32rvt_c_physical_only.ndm' (FILE-007)
+Information: Auto created reference libraries are up-to-date, no need to rebuild. (LIB-084)
+{Duplex}
+icc2_shell> 
+icc2_shell> open_block cts
+Information: User units loaded from library 'saed32rvt_ss0p75vn40c' (LNK-040)
+Opening block 'Duplex:cts.design' in edit mode
+{Duplex:cts.design}
+icc2_shell> 
+icc2_shell> link_block
+Using libraries: Duplex saed32rvt_ss0p75vn40c saed32rvt_c_physical_only
+Visiting block Duplex:cts.design
+Design 'Duplex' was successfully linked.
+1
+icc2_shell> 
+icc2_shell> set DESIGN_NAME Duplex
+Duplex
+icc2_shell> 
+icc2_shell> set_propagated_clock [all_clocks]
+1
+icc2_shell> 
+icc2_shell> current_scenario Normal_Slow_LowV_LT
+{Normal_Slow_LowV_LT}
+icc2_shell> 
+icc2_shell> set_ignored_layers -min_routing_layer M2  -max_routing_layer M5
+1
+icc2_shell> 
+icc2_shell> route_auto
+[icc2-lic Fri Feb 13 01:52:30 2026] Command 'route_auto' requires licenses
+[icc2-lic Fri Feb 13 01:52:30 2026] Sending authorization request for 'ICCompilerII'
+[icc2-lic Fri Feb 13 01:52:30 2026] Authorization request for 'ICCompilerII' failed (-5)
+[icc2-lic Fri Feb 13 01:52:30 2026] Sending authorization request for 'ICCompilerII-4'
+[icc2-lic Fri Feb 13 01:52:30 2026] Authorization request for 'ICCompilerII-4' failed (-5)
+[icc2-lic Fri Feb 13 01:52:30 2026] Sending authorization request for 'ICCompilerII-8'
+[icc2-lic Fri Feb 13 01:52:30 2026] Authorization request for 'ICCompilerII-8' succeeded
+[icc2-lic Fri Feb 13 01:52:30 2026] Sending authorization request for 'ICCompilerII-NX'
+[icc2-lic Fri Feb 13 01:52:31 2026] Authorization request for 'ICCompilerII-NX' succeeded
+[icc2-lic Fri Feb 13 01:52:31 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Fri Feb 13 01:52:31 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Fri Feb 13 01:52:31 2026] Count request for 'ICCompilerII-8' returned 0 
+[icc2-lic Fri Feb 13 01:52:31 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Fri Feb 13 01:52:31 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Fri Feb 13 01:52:31 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Fri Feb 13 01:52:31 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Fri Feb 13 01:52:31 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Fri Feb 13 01:52:31 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Fri Feb 13 01:52:31 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Fri Feb 13 01:52:31 2026] Count request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Fri Feb 13 01:52:31 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Fri Feb 13 01:52:32 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Fri Feb 13 01:52:32 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Fri Feb 13 01:52:32 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Fri Feb 13 01:52:32 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Fri Feb 13 01:52:32 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Fri Feb 13 01:52:32 2026] Check-out of alternate set of keys directly with queueing was successful
+Information: Starting 'route_auto' (FLW-8000)
+Information: Time: 2026-02-13 01:52:32 / Session: 0.01 hr / Command: 0.00 hr / Memory: 370 MB (FLW-8100)
+Cell Min-Routing-Layer = M2
+Cell Max-Routing-Layer = M5
+Turn off antenna since no rule is specified
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Warning: Cannot find a default contact code for layer CO. (ZRT-022)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 3.55 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 3.55 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+
+    Found 0 via ladders to verify.
+
+VIA LADDER INFO: found 0 via ladder DRCs across 0 nets.
+Updating the database ...
+
+    Via ladders will be inserted on 0 of 0 ports with via ladder constraints.
+
+Updating the database ...
+Information: Skipping global routing as it has already been run in the global_route_opt stage of clock_opt. (ZRT-607)
+
+Start track assignment
+
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :        true                
+common.verbose_level                                    :        0                   
+
+Printing options for 'route.track.*'
+track.crosstalk_driven                                  :        false               
+track.timing_driven                                     :        false               
+
+Information: Using 1 threads for routing. (ZRT-444)
+
+[Track Assign: TA init] Elapsed real time: 0:00:00 
+[Track Assign: TA init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Track Assign: TA init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Track Assign: TA init] Total (MB): Used   22  Alloctr   22  Proc 7994 
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :        true                
+common.verbose_level                                    :        0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :        true                
+detail.eco_route_use_soft_spacing_for_timing_optimization:       true                
+detail.timing_driven                                    :        false               
+
+Printing options for 'route.auto_via_ladder.*'
+
+[Dr init] Elapsed real time: 0:00:00 
+[Dr init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Dr init] Stage (MB): Used    9  Alloctr    9  Proc    7 
+[Dr init] Total (MB): Used   31  Alloctr   32  Proc 8002 
+Total number of nets = 364, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Information: Using 1 threads for routing. (ZRT-444)
+Start DR iteration 0: uniform partition
+Routed  1/9 Partitions, Violations =    0
+Routed  2/9 Partitions, Violations =    0
+Routed  3/9 Partitions, Violations =    0
+Routed  4/9 Partitions, Violations =    0
+Routed  5/9 Partitions, Violations =    0
+Routed  6/9 Partitions, Violations =    4
+Routed  7/9 Partitions, Violations =    10
+Routed  8/9 Partitions, Violations =    10
+Routed  9/9 Partitions, Violations =    18
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      18
+        Diff net spacing : 10
+        Off-grid : 8
+
+[Iter 0] Elapsed real time: 0:00:00 
+[Iter 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Iter 0] Stage (MB): Used   68  Alloctr   69  Proc  270 
+[Iter 0] Total (MB): Used   91  Alloctr   92  Proc 8265 
+
+End DR iteration 0 with 9 parts
+
+Start DR iteration 1: non-uniform partition
+Routed  1/6 Partitions, Violations =    18
+Routed  2/6 Partitions, Violations =    18
+Routed  3/6 Partitions, Violations =    18
+Routed  4/6 Partitions, Violations =    18
+Routed  5/6 Partitions, Violations =    18
+Routed  6/6 Partitions, Violations =    18
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      18
+        Diff net spacing : 10
+        Off-grid : 8
+
+[Iter 1] Elapsed real time: 0:00:00 
+[Iter 1] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Iter 1] Stage (MB): Used   68  Alloctr   69  Proc  270 
+[Iter 1] Total (MB): Used   91  Alloctr   92  Proc 8265 
+
+End DR iteration 1 with 6 parts
+
+Start DR iteration 2: non-uniform partition
+Routed  1/5 Partitions, Violations =    18
+Routed  2/5 Partitions, Violations =    21
+Routed  3/5 Partitions, Violations =    21
+Routed  4/5 Partitions, Violations =    21
+Routed  5/5 Partitions, Violations =    21
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      21
+        Less than minimum area : 3
+        Needs fat contact : 10
+        Off-grid : 8
+
+[Iter 2] Elapsed real time: 0:00:00 
+[Iter 2] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Iter 2] Stage (MB): Used   68  Alloctr   69  Proc  270 
+[Iter 2] Total (MB): Used   91  Alloctr   92  Proc 8265 
+
+End DR iteration 2 with 5 parts
+
+Start DR iteration 3: non-uniform partition
+Routed  1/5 Partitions, Violations =    21
+Routed  2/5 Partitions, Violations =    19
+Routed  3/5 Partitions, Violations =    19
+Routed  4/5 Partitions, Violations =    19
+Routed  5/5 Partitions, Violations =    19
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      19
+        Diff net spacing : 1
+        Less than minimum area : 1
+        Needs fat contact : 9
+        Off-grid : 8
+
+[Iter 3] Elapsed real time: 0:00:01 
+[Iter 3] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[Iter 3] Stage (MB): Used   68  Alloctr   69  Proc  272 
+[Iter 3] Total (MB): Used   91  Alloctr   92  Proc 8267 
+
+End DR iteration 3 with 5 parts
+
+Start DR iteration 4: non-uniform partition
+Routed  1/4 Partitions, Violations =    19
+Routed  2/4 Partitions, Violations =    19
+Routed  3/4 Partitions, Violations =    20
+Routed  4/4 Partitions, Violations =    22
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      22
+        Diff net spacing : 1
+        Less than minimum area : 4
+        Needs fat contact : 9
+        Off-grid : 8
+
+[Iter 4] Elapsed real time: 0:00:01 
+[Iter 4] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[Iter 4] Stage (MB): Used   68  Alloctr   69  Proc  272 
+[Iter 4] Total (MB): Used   91  Alloctr   92  Proc 8267 
+
+End DR iteration 4 with 4 parts
+
+Start DR iteration 5: non-uniform partition
+Routed  1/6 Partitions, Violations =    19
+Routed  2/6 Partitions, Violations =    18
+Routed  3/6 Partitions, Violations =    18
+Routed  4/6 Partitions, Violations =    18
+Routed  5/6 Partitions, Violations =    18
+Routed  6/6 Partitions, Violations =    18
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      18
+        Diff net spacing : 10
+        Off-grid : 8
+
+[Iter 5] Elapsed real time: 0:00:02 
+[Iter 5] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[Iter 5] Stage (MB): Used   68  Alloctr   69  Proc  272 
+[Iter 5] Total (MB): Used   91  Alloctr   92  Proc 8267 
+
+End DR iteration 5 with 6 parts
+
+Start DR iteration 6: non-uniform partition
+Routed  1/4 Partitions, Violations =    18
+Routed  2/4 Partitions, Violations =    18
+Routed  3/4 Partitions, Violations =    18
+Routed  4/4 Partitions, Violations =    18
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      18
+        Diff net spacing : 8
+        Needs fat contact : 2
+        Off-grid : 8
+
+[Iter 6] Elapsed real time: 0:00:02 
+[Iter 6] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[Iter 6] Stage (MB): Used   68  Alloctr   69  Proc  272 
+[Iter 6] Total (MB): Used   91  Alloctr   92  Proc 8267 
+
+End DR iteration 6 with 4 parts
+
+Start DR iteration 7: non-uniform partition
+Routed  1/4 Partitions, Violations =    18
+Routed  2/4 Partitions, Violations =    19
+Routed  3/4 Partitions, Violations =    19
+Routed  4/4 Partitions, Violations =    19
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      19
+        Diff net spacing : 8
+        Less than minimum area : 1
+        Needs fat contact : 2
+        Off-grid : 8
+
+[Iter 7] Elapsed real time: 0:00:03 
+[Iter 7] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:03
+[Iter 7] Stage (MB): Used   68  Alloctr   69  Proc  272 
+[Iter 7] Total (MB): Used   91  Alloctr   92  Proc 8267 
+
+End DR iteration 7 with 4 parts
+
+Start DR iteration 8: non-uniform partition
+Routed  1/3 Partitions, Violations =    19
+Routed  2/3 Partitions, Violations =    19
+Routed  3/3 Partitions, Violations =    19
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      19
+        Diff net spacing : 6
+        Less than minimum area : 1
+        Needs fat contact : 4
+        Off-grid : 8
+
+[Iter 8] Elapsed real time: 0:00:03 
+[Iter 8] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:03
+[Iter 8] Stage (MB): Used   68  Alloctr   69  Proc  273 
+[Iter 8] Total (MB): Used   91  Alloctr   92  Proc 8268 
+
+End DR iteration 8 with 3 parts
+
+Start DR iteration 9: non-uniform partition
+Routed  1/3 Partitions, Violations =    21
+Routed  2/3 Partitions, Violations =    20
+Routed  3/3 Partitions, Violations =    20
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      20
+        Diff net spacing : 3
+        Less than minimum area : 2
+        Needs fat contact : 7
+        Off-grid : 8
+
+[Iter 9] Elapsed real time: 0:00:04 
+[Iter 9] Elapsed cpu  time: sys=0:00:00 usr=0:00:04 total=0:00:04
+[Iter 9] Stage (MB): Used   68  Alloctr   69  Proc  279 
+[Iter 9] Total (MB): Used   91  Alloctr   92  Proc 8274 
+
+End DR iteration 9 with 3 parts
+
+Start DR iteration 10: non-uniform partition
+Routed  1/4 Partitions, Violations =    20
+Routed  2/4 Partitions, Violations =    18
+Routed  3/4 Partitions, Violations =    18
+Routed  4/4 Partitions, Violations =    18
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      18
+        Diff net spacing : 10
+        Off-grid : 8
+
+[Iter 10] Elapsed real time: 0:00:04 
+[Iter 10] Elapsed cpu  time: sys=0:00:00 usr=0:00:04 total=0:00:04
+[Iter 10] Stage (MB): Used   68  Alloctr   69  Proc  279 
+[Iter 10] Total (MB): Used   91  Alloctr   92  Proc 8274 
+
+End DR iteration 10 with 4 parts
+
+Stop DR since not converging
+
+[DR] Elapsed real time: 0:00:04 
+[DR] Elapsed cpu  time: sys=0:00:00 usr=0:00:04 total=0:00:04
+[DR] Stage (MB): Used    0  Alloctr    0  Proc  279 
+[DR] Total (MB): Used   22  Alloctr   23  Proc 8274 
+[DR: Done] Elapsed real time: 0:00:04 
+[DR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:04 total=0:00:04
+[DR: Done] Stage (MB): Used    0  Alloctr    0  Proc  279 
+[DR: Done] Total (MB): Used   22  Alloctr   23  Proc 8274 
+
+DR finished with 0 open nets, of which 0 are frozen
+
+DR finished with 18 violations
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      18
+        Diff net spacing : 10
+        Off-grid : 8
+
+
+
+Total Wire Length =                    2868 micron
+Total Number of Contacts =             2136
+Total Number of Wires =                1920
+Total Number of PtConns =              350
+Total Number of Routed Wires =       1903
+Total Routed Wire Length =           2827 micron
+Total Number of Routed Contacts =       2136
+        Layer                 M1 :          2 micron
+        Layer                 M2 :       1303 micron
+        Layer                 M3 :       1350 micron
+        Layer                 M4 :         30 micron
+        Layer                 M5 :        101 micron
+        Layer                 M6 :         41 micron
+        Layer                 M7 :          0 micron
+        Layer                 M8 :          0 micron
+        Layer                 M9 :          0 micron
+        Layer               MRDL :          0 micron
+        Via            VIA56SQ_C :         24
+        Via       VIA45SQ_C(rot) :         33
+        Via            VIA34SQ_C :         42
+        Via            VIA23SQ_C :          3
+        Via       VIA23SQ_C(rot) :        962
+        Via            VIA12SQ_C :        962
+        Via       VIA12SQ_C(rot) :         91
+        Via        VIA12SQ_C_2x1 :          3
+        Via   VIA12SQ_C(rot)_1x2 :         10
+        Via        VIA12SQ_C_1x2 :          1
+        Via     VIA12SQ(rot)_2x1 :          1
+        Via          VIA12SQ_1x2 :          4
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.89% (19 / 2136 vias)
+ 
+    Layer VIA1       =  1.77% (19     / 1072    vias)
+        Weight 1     =  1.77% (19      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 98.23% (1053    vias)
+    Layer VIA2       =  0.00% (0      / 965     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (965     vias)
+    Layer VIA3       =  0.00% (0      / 42      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (42      vias)
+    Layer VIA4       =  0.00% (0      / 33      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (33      vias)
+    Layer VIA5       =  0.00% (0      / 24      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (24      vias)
+ 
+  Total double via conversion rate    =  0.89% (19 / 2136 vias)
+ 
+    Layer VIA1       =  1.77% (19     / 1072    vias)
+    Layer VIA2       =  0.00% (0      / 965     vias)
+    Layer VIA3       =  0.00% (0      / 42      vias)
+    Layer VIA4       =  0.00% (0      / 33      vias)
+    Layer VIA5       =  0.00% (0      / 24      vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.89% (19 / 2136 vias)
+ 
+    Layer VIA1       =  1.77% (19     / 1072    vias)
+        Weight 1     =  1.77% (19      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 98.23% (1053    vias)
+    Layer VIA2       =  0.00% (0      / 965     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (965     vias)
+    Layer VIA3       =  0.00% (0      / 42      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (42      vias)
+    Layer VIA4       =  0.00% (0      / 33      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (33      vias)
+    Layer VIA5       =  0.00% (0      / 24      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (24      vias)
+ 
+
+Total number of nets = 364
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 18
+Total number of antenna violations = antenna checking not active
+Information: Routes in non-preferred voltage areas = 0 (ZRT-559)
+
+Topology ECO not run, no qualifying violations or in frozen nets.
+Updating the database ...
+Information: Ending 'route_auto' (FLW-8001)
+Information: Time: 2026-02-13 01:52:36 / Session: 0.01 hr / Command: 0.00 hr / Memory: 674 MB (FLW-8100)
+icc2_shell> 
+icc2_shell> route_opt
+[icc2-lic Fri Feb 13 01:52:36 2026] Command 'route_opt' requires licenses
+[icc2-lic Fri Feb 13 01:52:36 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Fri Feb 13 01:52:36 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Fri Feb 13 01:52:36 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Fri Feb 13 01:52:36 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Fri Feb 13 01:52:36 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Fri Feb 13 01:52:36 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Fri Feb 13 01:52:36 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Fri Feb 13 01:52:36 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Fri Feb 13 01:52:36 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Fri Feb 13 01:52:36 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Fri Feb 13 01:52:36 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Fri Feb 13 01:52:36 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Fri Feb 13 01:52:36 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Fri Feb 13 01:52:36 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Fri Feb 13 01:52:36 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Fri Feb 13 01:52:36 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Fri Feb 13 01:52:36 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Fri Feb 13 01:52:36 2026] Check-out of alternate set of keys directly with queueing was successful
+Information: Starting 'route_opt' (FLW-8000)
+Information: Time: 2026-02-13 01:52:36 / Session: 0.01 hr / Command: 0.00 hr / Memory: 674 MB (FLW-8100)
+Information: Timer using 1 threads
+INFO: route_opt is running in balanced flow mode
+Warning: SI analysis is not enabled for post-route optimization. (ROPT-002)
+Warning: Cannot find any max transition constraint on the design. (OPT-070)
+INFO: Total Power Aware Optimization Enabled (Dynamic + Leakage)
+Warning: Corner Fast_HighV_HT:  1 process number, 1 process label, 0 voltage, and 0 temperature mismatches. (PVT-030)
+Warning: 314 cells affected for early, 314 for late. (PVT-031)
+Warning: 0 port driving_cells affected for early, 0 for late. (PVT-034)
+Warning: Corner Slow_LowV_LT:  1 process number, 1 process label, 0 voltage, and 0 temperature mismatches. (PVT-030)
+Warning: 314 cells affected for early, 314 for late. (PVT-031)
+Warning: 0 port driving_cells affected for early, 0 for late. (PVT-034)
+Route-opt command begin                   CPU:     9 s (  0.00 hr )  ELAPSE:    26 s (  0.01 hr )  MEM-PEAK:   674 MB
+Warning: SI analysis is not enabled for post-route optimization. (ROPT-002)
+Warning: Cannot find any max transition constraint on the design. (OPT-070)
+INFO: place.legalize.enable_advanced_legalizer not set - need to revert CLO
+INFO: Concurrent Legalization and Optimization (CLO) Reverted
+INFO: place.legalize.enable_advanced_legalizer not set - need to revert CLO
+Information: The stitching and editing of coupling caps is turned OFF for design 'Duplex:cts.design'. (TIM-125)
+Information: Design cts has 356 nets, 0 global routed, 354 detail routed. (NEX-024)
+Information: The RC mode used is DR for design 'Duplex'. (NEX-022)
+---extraction options---
+Corner: Slow_LowV_LT
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Corner: Fast_HighV_HT
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.enable_coupling_cap    : false
+Extracting design: cts 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 354 nets are successfully extracted. (NEX-028)
+Warning: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 354, routed nets = 354, across physical hierarchy nets = 0, parasitics cached nets = 354, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+************************************************************
+Timer Settings:
+Delay Calculation Style:                   auto
+Signal Integrity Analysis:                 disabled
+Timing Window Analysis:                    disabled
+Advanced Waveform Propagation:             disabled
+Variation Type:                            fixed_derate
+Clock Reconvergence Pessimism Removal:     disabled
+Advanced Receiver Model:                   disabled
+ML Acceleration:                           off
+************************************************************
+Info: update em.
+
+Route-opt timing update complete          CPU:     9 s (  0.00 hr )  ELAPSE:    26 s (  0.01 hr )  MEM-PEAK:   674 MB
+INFO: Propagating Switching Activities
+Information: Activity propagation will be performed for scenario Normal_Fast_HighV_HT.
+Information: Doing activity propagation for mode 'Normal' and corner 'Fast_HighV_HT' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario Normal_Fast_HighV_HT (POW-052)
+Information: Running switching activity propagation in scalar mode!
+
+ **** Information : No. of simulation cycles = 6 ****
+Information: Propagated activity on scenario Normal_Slow_LowV_LT identical to that on Normal_Fast_HighV_HT (POW-006)
+INFO: Switching Activity propagation took     0.00000 sec
+INFO: Propagating Switching Activity for all power flows 
+
+Route-opt initial QoR
+_____________________
+Scenario Mapping Table
+1: Normal_Fast_HighV_HT
+2: Normal_Slow_LowV_LT
+
+Pathgroup Mapping Table
+1: **default**
+2: **async_default**
+3: **clock_gating_default**
+4: **in2reg_default**
+5: **reg2out_default**
+6: **in2out_default**
+7: clock
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+PATHGROUP QOR 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Scene  PG      WNS        TNS    NSV      WHV        THV    NHV
+    1   1   0.0000     0.0000      0   0.0000     0.0000      0
+    1   2   0.0000     0.0000      0   0.0000     0.0000      0
+    1   3   0.0000     0.0000      0   0.0000     0.0000      0
+    1   4   0.0000     0.0000      0   0.0000     0.0000      0
+    1   5   0.0000     0.0000      0   0.0000     0.0000      0
+    1   6   0.0000     0.0000      0   0.0000     0.0000      0
+    1   7   0.0000     0.0000      0   0.0000     0.0000      0
+    2   1   0.0000     0.0000      0        -          -      -
+    2   2   0.0000     0.0000      0        -          -      -
+    2   3   0.0000     0.0000      0        -          -      -
+    2   4   0.0000     0.0000      0        -          -      -
+    2   5   0.0000     0.0000      0        -          -      -
+    2   6   0.0000     0.0000      0        -          -      -
+    2   7   0.0000     0.0000      0        -          -      -
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SCENARIO QOR 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Scene  PG      WNS        TNS   R2RTNS    NSV      WHV        THV    NHV  MaxTrnV   MaxTranC  MaxCapV    Leakage
+    1   *   0.0000     0.0000   0.0000      0   0.0000     0.0000      0        0     0.0000        0 3382242304
+    2   *   0.0000     0.0000   0.0000      0        -          -      -        0     0.0000        0 6674194.00
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DESIGN QOR 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Scene  PG      WNS        TNS   R2RTNS    NSV      WHV        THV    NHV  MaxTrnV   MaxTranC  MaxCapV    Leakage         Area    InstCnt
+    *   *   0.0000     0.0000   0.0000      0   0.0000     0.0000      0        0     0.0000        0 3382242304       988.11        314
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Route-opt initial QoR Summary       WNS        TNS   R2RTNS    NSV      WHV        THV    NHV  MaxTrnV  MaxCapV    Leakage         Area    InstCnt
+Route-opt initial QoR Summary    0.0000     0.0000   0.0000      0   0.0000     0.0000      0        0        0 3382242304       988.11        314
+Information: The netlist change observers are disabled for incremental extraction. (TIM-126)
+INFO: using 1 threads
+xDensity is not ready for site component checking. The min area module collection degenerate into union-row mode.
+Route-opt initialization complete         CPU:    11 s (  0.00 hr )  ELAPSE:    28 s (  0.01 hr )  MEM-PEAK:   674 MB
+Information: Initializing classic cellmap without advanced rules enabled and with PDC enabled
+Information: The following app options are used in cellmap
+        place.legalize.enable_color_aware_placement : false
+        place.legalize.use_nll_query_cm : false
+        place.legalize.enable_advanced_legalizer : false
+        place.legalize.enable_prerouted_net_check : true
+        place.legalize.enable_advanced_prerouted_net_check : false
+        place.legalize.always_continue : true
+        place.legalize.limit_legality_checks : false
+        place.common.pnet_aware_density : 1.0000
+        place.common.pnet_aware_min_width : 0.0000
+        place.common.pnet_aware_layers : {}
+        place.common.use_placement_model : false
+        place.common.enable_advanced_placement_model : true
+        cts.placement.cell_spacing_rule_style : maximum
+Information: Creating classic rule checker.
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+        place.legalize.enable_prerouted_net_check: 1
+        place.legalize.num_tracks_for_access_check: 1
+        place.legalize.use_eol_spacing_for_access_check: 0
+        place.legalize.allow_touch_track_for_access_check: 1
+        place.legalize.reduce_conservatism_in_eol_check: 0
+        place.legalize.preroute_shape_merge_distance: 0.0
+        place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 3 shapes out of 56 total shapes.
+Layer M2: cached 3 shapes out of 1501 total shapes.
+Cached 6 vias out of 2445 total vias.
+Total 0.0337 seconds to build cellmap data
+INFO: creating 8(r) x 8(c) GridCells YDim 5.016 XDim 5.016
+INFO: number of GridCells (0x9b59d4c0): 64
+INFO: creating 8(r) x 8(c) GridCells YDim 5.016 XDim 5.016
+INFO: number of GridCells (0x9b59d4c0): 64
+Total 0.0026 seconds to load 314 cell instances into cellmap
+Moveable cells: 314; Application fixed cells: 0; Macro cells: 0; User fixed cells: 0
+353 out of 361 data nets are detail routed, 1 out of 1 clock nets is detail routed and total 362 nets have been analyzed
+Estimated current stage is after clock and data detail route stage
+Average cell width 1.8821, cell height 1.6720, cell area 3.1469 for total 314 placed and application fixed cells
+Route-opt optimization summary            SETUP-COST    R2R-COST HOLD-COST LDRC-COST          AREA     LEAKAGE     INSTCNT            ELAPSE       MEM
+Warning: Cannot find any max transition constraint on the design. (OPT-070)
+INFO: place.legalize.enable_advanced_legalizer not set - need to revert CLO
+
+
+INFO: New Levelizer turned on
+Route-opt optimization Phase 2 Iter  1          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 2 Iter  2          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+
+
+Route-opt optimization Phase 4 Iter  1          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 4 Iter  2          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 4 Iter  3          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 4 Iter  4          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 4 Iter  5          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 4 Iter  6          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 4 Iter  7          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 4 Iter  8          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+
+Route-opt optimization Phase 5 Iter  1          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 5 Iter  2          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 5 Iter  3          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 5 Iter  4          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 5 Iter  5          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 5 Iter  6          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 5 Iter  7          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 5 Iter  8          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 5 Iter  9          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 5 Iter 10          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 5 Iter 11          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 5 Iter 12          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 5 Iter 13          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Route-opt optimization Phase 5 Iter 14          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+
+
+Route-opt optimization Phase 7 Iter  1          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Warning: Design includes unreasonable large hold violation(s). (OPT-209)
+Route-opt optimization Phase 7 Iter  2          0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       674
+Warning: Design includes unreasonable large hold violation(s). (OPT-209)
+
+
+Route-opt route preserve complete         CPU:    11 s (  0.00 hr )  ELAPSE:    28 s (  0.01 hr )  MEM-PEAK:   674 MB
+
+INFO: Sending timing info to router
+Information: Serialized np data
+INFO: timer data saved to /tmp/cts_12363_571964288.timdat
+Information: The netlist change observers are enabled for incremental extraction. (TIM-127)
+[icc2-lic Fri Feb 13 01:52:39 2026] Command 'legalize_placement' requires licenses
+[icc2-lic Fri Feb 13 01:52:39 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Fri Feb 13 01:52:39 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Fri Feb 13 01:52:39 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Fri Feb 13 01:52:39 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Fri Feb 13 01:52:39 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Fri Feb 13 01:52:39 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Fri Feb 13 01:52:39 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Fri Feb 13 01:52:39 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Fri Feb 13 01:52:39 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Fri Feb 13 01:52:39 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Fri Feb 13 01:52:39 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Fri Feb 13 01:52:39 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Fri Feb 13 01:52:39 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Fri Feb 13 01:52:39 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Fri Feb 13 01:52:39 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Fri Feb 13 01:52:39 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Fri Feb 13 01:52:39 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Fri Feb 13 01:52:39 2026] Check-out of alternate set of keys directly with queueing was successful
+nplDplc2Placer::setParam(effort,1)
+nplDplc2Placer::setParam(debug,0)
+nplDplc2Placer::setParam(site_check,2)
+nplDplc2Placer::setParam(app_firm_wgt,0)
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+PDC app_options settings =========
+        place.legalize.enable_prerouted_net_check: 1
+        place.legalize.num_tracks_for_access_check: 1
+        place.legalize.use_eol_spacing_for_access_check: 0
+        place.legalize.allow_touch_track_for_access_check: 1
+        place.legalize.reduce_conservatism_in_eol_check: 0
+        place.legalize.preroute_shape_merge_distance: 0.0
+        place.legalize.enable_non_preferred_direction_span_check: 0
+
+Layer M1: cached 3 shapes out of 56 total shapes.
+Layer M2: cached 3 shapes out of 1501 total shapes.
+Cached 6 vias out of 2445 total vias.
+
+Legalizing Top Level Design Duplex ... 
+Information: Initializing classic cellmap without advanced rules enabled and without PDC enabled
+Information: The following app options are used in cellmap
+        place.legalize.enable_color_aware_placement : false
+        place.legalize.use_nll_query_cm : false
+        place.legalize.enable_advanced_legalizer : false
+        place.legalize.enable_prerouted_net_check : true
+        place.legalize.enable_advanced_prerouted_net_check : false
+        place.legalize.always_continue : true
+        place.legalize.limit_legality_checks : false
+        place.common.pnet_aware_density : 1.0000
+        place.common.pnet_aware_min_width : 0.0000
+        place.common.pnet_aware_layers : {}
+        place.common.use_placement_model : false
+        place.common.enable_advanced_placement_model : true
+        cts.placement.cell_spacing_rule_style : maximum
+Total 0.0186 seconds to build cellmap data
+Information: Creating classic rule checker.
+Warning: Routing direction of metal layer PO is neither "horizontal" nor "vertical".  PDC checks will not be performed on this layer. (PDC-003)
+=====> Processed 37 ref cells (8 fillers) from library
+
+Bounds/Regions In This Design:
+        Area    Num Cells  Exclusive Name
+ (square um)
+     1375.43          314        Yes DEFAULT_VA
+
+Warning: max_legality_failures=5000 ignored.
+        To use it, set limit_legality_checks to true.
+Warning: max_legality_check_range=500 ignored.
+        To use it, set limit_legality_checks to true.
+Starting legalizer.
+Warning: Exclusive bound 'DEFAULT' has no cells.
+Optimizing Exclusive Bound 'DEFAULT_VA' (2/2)
+    Done Exclusive Bound 'DEFAULT_VA' (2/2) (0 sec)
+Legalization complete (0 total sec)
+
+****************************************
+  Report : Placement Attempts
+  Site   : unit
+****************************************
+
+number of cells:                    314
+number of references:                37
+number of site rows:                 22
+number of locations attempted:     6417
+number of locations failed:           0  (0.0%)
+
+Legality of references at locations:
+0 references had failures.
+
+Legality of references in rows:
+0 references had row failures.
+
+****************************************
+  Report : Cell Displacements
+****************************************
+
+number of cells aggregated:         314 (3888 total sites)
+avg row height over cells:        1.672 um
+rms cell displacement:            0.000 um ( 0.00 row height)
+rms weighted cell displacement:   0.000 um ( 0.00 row height)
+max cell displacement:            0.000 um ( 0.00 row height)
+avg cell displacement:            0.000 um ( 0.00 row height)
+avg weighted cell displacement:   0.000 um ( 0.00 row height)
+number of cells moved:                0
+number of large displacements:        0
+large displacement threshold:     3.000 row height
+
+Displacements of worst 10 cells:
+Cell: Transmitter/Unit1/U26 (AND2X1_RVT)
+  Input location: (16.26,25.38)
+  Legal location: (16.26,25.38)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: Transmitter/Unit1/U25 (AND2X1_RVT)
+  Input location: (17.324,28.724)
+  Legal location: (17.324,28.724)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: Transmitter/Unit1/U24 (AND2X1_RVT)
+  Input location: (19.3,23.708)
+  Legal location: (19.3,23.708)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: Transmitter/Unit1/U23 (AND2X1_RVT)
+  Input location: (23.404,17.02)
+  Legal location: (23.404,17.02)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: Transmitter/Unit1/U18 (AND2X1_RVT)
+  Input location: (32.372,27.052)
+  Legal location: (32.372,27.052)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: Transmitter/Unit1/U22 (AND2X1_RVT)
+  Input location: (19.604,20.364)
+  Legal location: (19.604,20.364)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: Transmitter/Unit1/U21 (AND2X1_RVT)
+  Input location: (27.964,17.02)
+  Legal location: (27.964,17.02)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: Transmitter/Unit1/U20 (AND2X1_RVT)
+  Input location: (31.156,20.364)
+  Legal location: (31.156,20.364)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: Transmitter/Unit1/U19 (AND2X1_RVT)
+  Input location: (33.284,20.364)
+  Legal location: (33.284,20.364)
+  Displacement:   0.000 um ( 0.00 row height)
+Cell: Transmitter/Unit1/U27 (AND2X1_RVT)
+  Input location: (18.844,32.068)
+  Legal location: (18.844,32.068)
+  Displacement:   0.000 um ( 0.00 row height)
+
+Legalization succeeded.
+Total Legalizer CPU: 0.049
+Total Legalizer Wall Time: 0.049
+----------------------------------------------------------------
+
+Route-opt optimization summary            SETUP-COST    R2R-COST HOLD-COST LDRC-COST          AREA     LEAKAGE     INSTCNT            ELAPSE       MEM
+Route-opt legalization complete           CPU:    11 s (  0.00 hr )  ELAPSE:    28 s (  0.01 hr )  MEM-PEAK:   674 MB
+INFO: Router Max Iterations set to : 5 
+Cell Min-Routing-Layer = M2
+Cell Max-Routing-Layer = M5
+Turn off antenna since no rule is specified
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+Warning: Cannot find a default contact code for layer CO. (ZRT-022)
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 3.55 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 3.55 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+[ECO: DbIn With Extraction] Elapsed real time: 0:00:00 
+[ECO: DbIn With Extraction] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: DbIn With Extraction] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[ECO: DbIn With Extraction] Total (MB): Used   22  Alloctr   22  Proc 8274 
+[ECO: Before Refresh Via Ladder Phase] Elapsed real time: 0:00:00 
+[ECO: Before Refresh Via Ladder Phase] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: Before Refresh Via Ladder Phase] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[ECO: Before Refresh Via Ladder Phase] Total (MB): Used   22  Alloctr   22  Proc 8274 
+
+    Found 0 via ladders to verify.
+
+VIA LADDER INFO: found 0 via ladder DRCs across 0 nets.
+Updating the database ...
+
+    Via ladders will be inserted on 0 of 0 ports with via ladder constraints.
+
+Updating the database ...
+[ECO: After Refresh Via Ladder Phase] Elapsed real time: 0:00:00 
+[ECO: After Refresh Via Ladder Phase] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: After Refresh Via Ladder Phase] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[ECO: After Refresh Via Ladder Phase] Total (MB): Used   22  Alloctr   22  Proc 8274 
+[ECO: Analysis] Elapsed real time: 0:00:00 
+[ECO: Analysis] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: Analysis] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[ECO: Analysis] Total (MB): Used   22  Alloctr   22  Proc 8274 
+Num of eco nets = 364
+Num of open eco nets = 0
+[ECO: Init] Elapsed real time: 0:00:00 
+[ECO: Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[ECO: Init] Stage (MB): Used   19  Alloctr   19  Proc    0 
+[ECO: Init] Total (MB): Used   22  Alloctr   22  Proc 8274 
+Printing options for 'route.common.*'
+common.eco_route_fix_existing_drc                       :        true                
+common.verbose_level                                    :        0                   
+
+Printing options for 'route.detail.*'
+detail.antenna                                          :        true                
+detail.eco_route_use_soft_spacing_for_timing_optimization:       false               
+detail.timing_driven                                    :        false               
+
+Printing options for 'route.auto_via_ladder.*'
+
+
+Begin ECO DRC check ...
+
+Checked 1/1 Partitions, Violations =    18
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      18
+
+[DRC CHECK] Elapsed real time: 0:00:00 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc  127 
+[DRC CHECK] Total (MB): Used   91  Alloctr   92  Proc 8402 
+
+Total Wire Length =                    2868 micron
+Total Number of Contacts =             2136
+Total Number of Wires =                1920
+Total Number of PtConns =              350
+Total Number of Routed Wires =       1903
+Total Routed Wire Length =           2827 micron
+Total Number of Routed Contacts =       2136
+        Layer                 M1 :          2 micron
+        Layer                 M2 :       1303 micron
+        Layer                 M3 :       1350 micron
+        Layer                 M4 :         30 micron
+        Layer                 M5 :        101 micron
+        Layer                 M6 :         41 micron
+        Layer                 M7 :          0 micron
+        Layer                 M8 :          0 micron
+        Layer                 M9 :          0 micron
+        Layer               MRDL :          0 micron
+        Via            VIA56SQ_C :         24
+        Via       VIA45SQ_C(rot) :         33
+        Via            VIA34SQ_C :         42
+        Via            VIA23SQ_C :          3
+        Via       VIA23SQ_C(rot) :        962
+        Via            VIA12SQ_C :        962
+        Via       VIA12SQ_C(rot) :         91
+        Via        VIA12SQ_C_2x1 :          3
+        Via   VIA12SQ_C(rot)_1x2 :         10
+        Via        VIA12SQ_C_1x2 :          1
+        Via     VIA12SQ(rot)_2x1 :          1
+        Via          VIA12SQ_1x2 :          4
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.89% (19 / 2136 vias)
+ 
+    Layer VIA1       =  1.77% (19     / 1072    vias)
+        Weight 1     =  1.77% (19      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 98.23% (1053    vias)
+    Layer VIA2       =  0.00% (0      / 965     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (965     vias)
+    Layer VIA3       =  0.00% (0      / 42      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (42      vias)
+    Layer VIA4       =  0.00% (0      / 33      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (33      vias)
+    Layer VIA5       =  0.00% (0      / 24      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (24      vias)
+ 
+  Total double via conversion rate    =  0.89% (19 / 2136 vias)
+ 
+    Layer VIA1       =  1.77% (19     / 1072    vias)
+    Layer VIA2       =  0.00% (0      / 965     vias)
+    Layer VIA3       =  0.00% (0      / 42      vias)
+    Layer VIA4       =  0.00% (0      / 33      vias)
+    Layer VIA5       =  0.00% (0      / 24      vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.89% (19 / 2136 vias)
+ 
+    Layer VIA1       =  1.77% (19     / 1072    vias)
+        Weight 1     =  1.77% (19      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 98.23% (1053    vias)
+    Layer VIA2       =  0.00% (0      / 965     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (965     vias)
+    Layer VIA3       =  0.00% (0      / 42      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (42      vias)
+    Layer VIA4       =  0.00% (0      / 33      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (33      vias)
+    Layer VIA5       =  0.00% (0      / 24      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (24      vias)
+ 
+Total number of nets = 364, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Information: Using 1 threads for routing. (ZRT-444)
+Start DR iteration 0: non-uniform partition
+Routed  1/6 Partitions, Violations =    18
+Routed  2/6 Partitions, Violations =    18
+Routed  3/6 Partitions, Violations =    18
+Routed  4/6 Partitions, Violations =    18
+Routed  5/6 Partitions, Violations =    18
+Routed  6/6 Partitions, Violations =    18
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      18
+        Diff net spacing : 10
+        Off-grid : 8
+
+[Iter 0] Elapsed real time: 0:00:00 
+[Iter 0] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Iter 0] Stage (MB): Used   68  Alloctr   69  Proc  127 
+[Iter 0] Total (MB): Used   91  Alloctr   92  Proc 8402 
+
+End DR iteration 0 with 6 parts
+
+Start DR iteration 1: non-uniform partition
+Routed  1/5 Partitions, Violations =    18
+Routed  2/5 Partitions, Violations =    18
+Routed  3/5 Partitions, Violations =    18
+Routed  4/5 Partitions, Violations =    18
+Routed  5/5 Partitions, Violations =    18
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      18
+        Diff net spacing : 10
+        Off-grid : 8
+
+[Iter 1] Elapsed real time: 0:00:00 
+[Iter 1] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Iter 1] Stage (MB): Used   68  Alloctr   69  Proc  128 
+[Iter 1] Total (MB): Used   91  Alloctr   92  Proc 8402 
+
+End DR iteration 1 with 5 parts
+
+Start DR iteration 2: non-uniform partition
+Routed  1/4 Partitions, Violations =    18
+Routed  2/4 Partitions, Violations =    18
+Routed  3/4 Partitions, Violations =    19
+Routed  4/4 Partitions, Violations =    19
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      19
+        Less than minimum area : 1
+        Needs fat contact : 10
+        Off-grid : 8
+
+[Iter 2] Elapsed real time: 0:00:01 
+[Iter 2] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[Iter 2] Stage (MB): Used   68  Alloctr   69  Proc  133 
+[Iter 2] Total (MB): Used   91  Alloctr   92  Proc 8408 
+
+End DR iteration 2 with 4 parts
+
+Start DR iteration 3: non-uniform partition
+Routed  1/5 Partitions, Violations =    19
+Routed  2/5 Partitions, Violations =    19
+Routed  3/5 Partitions, Violations =    19
+Routed  4/5 Partitions, Violations =    19
+Routed  5/5 Partitions, Violations =    19
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      19
+        Less than minimum area : 1
+        Needs fat contact : 10
+        Off-grid : 8
+
+[Iter 3] Elapsed real time: 0:00:01 
+[Iter 3] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[Iter 3] Stage (MB): Used   68  Alloctr   69  Proc  133 
+[Iter 3] Total (MB): Used   91  Alloctr   92  Proc 8408 
+
+End DR iteration 3 with 5 parts
+
+Start DR iteration 4: non-uniform partition
+Routed  1/4 Partitions, Violations =    19
+Routed  2/4 Partitions, Violations =    18
+Routed  3/4 Partitions, Violations =    18
+Routed  4/4 Partitions, Violations =    21
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      21
+        Diff net spacing : 2
+        Less than minimum area : 3
+        Needs fat contact : 8
+        Off-grid : 8
+
+[Iter 4] Elapsed real time: 0:00:02 
+[Iter 4] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[Iter 4] Stage (MB): Used   68  Alloctr   69  Proc  135 
+[Iter 4] Total (MB): Used   91  Alloctr   92  Proc 8409 
+
+End DR iteration 4 with 4 parts
+
+Incremental DRC patching:
+Routed  1/4 Partitions, Violations =    21
+Routed  2/4 Partitions, Violations =    21
+Routed  3/4 Partitions, Violations =    21
+Routed  4/4 Partitions, Violations =    21
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      21
+        Diff net spacing : 2
+        Less than minimum area : 3
+        Needs fat contact : 8
+        Off-grid : 8
+
+Stop DR since reached max number of iterations
+
+
+Nets that have been changed:
+Net 1 = clock
+Net 2 = Reciever/Unit2/HFSNET_3
+Net 3 = Reciever/def_stp_bit_w
+Net 4 = Reciever/Unit2/n25
+Net 5 = Reciever/Unit2/n61
+Net 6 = Reciever/Unit2/n65
+Net 7 = Reciever/Unit2/n26
+Net 8 = Reciever/Unit2/stop_count[1]
+Net 9 = Reciever/Unit3/n3
+Net 10 = Reciever/Unit4/n3
+Net 11 = Reciever/Unit4/n1
+Total number of changed nets = 11 (out of 364)
+
+[DR: Done] Elapsed real time: 0:00:02 
+[DR: Done] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[DR: Done] Stage (MB): Used    0  Alloctr    0  Proc  135 
+[DR: Done] Total (MB): Used   22  Alloctr   23  Proc 8409 
+[ECO: DR] Elapsed real time: 0:00:02 
+[ECO: DR] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[ECO: DR] Stage (MB): Used   19  Alloctr   19  Proc  135 
+[ECO: DR] Total (MB): Used   22  Alloctr   23  Proc 8409 
+
+ECO Route finished with 0 open nets, of which 0 are frozen
+
+ECO Route finished with 21 violations
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      21
+        Diff net spacing : 2
+        Less than minimum area : 3
+        Needs fat contact : 8
+        Off-grid : 8
+
+
+
+Total Wire Length =                    2869 micron
+Total Number of Contacts =             2139
+Total Number of Wires =                1923
+Total Number of PtConns =              350
+Total Number of Routed Wires =       1906
+Total Routed Wire Length =           2828 micron
+Total Number of Routed Contacts =       2139
+        Layer                 M1 :          2 micron
+        Layer                 M2 :       1301 micron
+        Layer                 M3 :       1353 micron
+        Layer                 M4 :         30 micron
+        Layer                 M5 :        101 micron
+        Layer                 M6 :         41 micron
+        Layer                 M7 :          0 micron
+        Layer                 M8 :          0 micron
+        Layer                 M9 :          0 micron
+        Layer               MRDL :          0 micron
+        Via            VIA56SQ_C :         24
+        Via       VIA45SQ_C(rot) :         33
+        Via            VIA34SQ_C :         42
+        Via            VIA23SQ_C :          3
+        Via       VIA23SQ_C(rot) :        965
+        Via            VIA12SQ_C :        970
+        Via       VIA12SQ_C(rot) :         91
+        Via        VIA12SQ_C_2x1 :          3
+        Via   VIA12SQ_C(rot)_1x2 :          2
+        Via        VIA12SQ_C_1x2 :          1
+        Via     VIA12SQ(rot)_2x1 :          1
+        Via          VIA12SQ_1x2 :          4
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.51% (11 / 2139 vias)
+ 
+    Layer VIA1       =  1.03% (11     / 1072    vias)
+        Weight 1     =  1.03% (11      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 98.97% (1061    vias)
+    Layer VIA2       =  0.00% (0      / 968     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (968     vias)
+    Layer VIA3       =  0.00% (0      / 42      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (42      vias)
+    Layer VIA4       =  0.00% (0      / 33      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (33      vias)
+    Layer VIA5       =  0.00% (0      / 24      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (24      vias)
+ 
+  Total double via conversion rate    =  0.51% (11 / 2139 vias)
+ 
+    Layer VIA1       =  1.03% (11     / 1072    vias)
+    Layer VIA2       =  0.00% (0      / 968     vias)
+    Layer VIA3       =  0.00% (0      / 42      vias)
+    Layer VIA4       =  0.00% (0      / 33      vias)
+    Layer VIA5       =  0.00% (0      / 24      vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.51% (11 / 2139 vias)
+ 
+    Layer VIA1       =  1.03% (11     / 1072    vias)
+        Weight 1     =  1.03% (11      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 98.97% (1061    vias)
+    Layer VIA2       =  0.00% (0      / 968     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (968     vias)
+    Layer VIA3       =  0.00% (0      / 42      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (42      vias)
+    Layer VIA4       =  0.00% (0      / 33      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (33      vias)
+    Layer VIA5       =  0.00% (0      / 24      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (24      vias)
+ 
+
+Total number of nets = 364
+0 open nets, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 21
+Total number of antenna violations = antenna checking not active
+Information: Routes in non-preferred voltage areas = 0 (ZRT-559)
+
+Total Wire Length =                    2869 micron
+Total Number of Contacts =             2139
+Total Number of Wires =                1923
+Total Number of PtConns =              350
+Total Number of Routed Wires =       1906
+Total Routed Wire Length =           2828 micron
+Total Number of Routed Contacts =       2139
+        Layer                 M1 :          2 micron
+        Layer                 M2 :       1301 micron
+        Layer                 M3 :       1353 micron
+        Layer                 M4 :         30 micron
+        Layer                 M5 :        101 micron
+        Layer                 M6 :         41 micron
+        Layer                 M7 :          0 micron
+        Layer                 M8 :          0 micron
+        Layer                 M9 :          0 micron
+        Layer               MRDL :          0 micron
+        Via            VIA56SQ_C :         24
+        Via       VIA45SQ_C(rot) :         33
+        Via            VIA34SQ_C :         42
+        Via            VIA23SQ_C :          3
+        Via       VIA23SQ_C(rot) :        965
+        Via            VIA12SQ_C :        970
+        Via       VIA12SQ_C(rot) :         91
+        Via        VIA12SQ_C_2x1 :          3
+        Via   VIA12SQ_C(rot)_1x2 :          2
+        Via        VIA12SQ_C_1x2 :          1
+        Via     VIA12SQ(rot)_2x1 :          1
+        Via          VIA12SQ_1x2 :          4
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate =  0.51% (11 / 2139 vias)
+ 
+    Layer VIA1       =  1.03% (11     / 1072    vias)
+        Weight 1     =  1.03% (11      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 98.97% (1061    vias)
+    Layer VIA2       =  0.00% (0      / 968     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (968     vias)
+    Layer VIA3       =  0.00% (0      / 42      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (42      vias)
+    Layer VIA4       =  0.00% (0      / 33      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (33      vias)
+    Layer VIA5       =  0.00% (0      / 24      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (24      vias)
+ 
+  Total double via conversion rate    =  0.51% (11 / 2139 vias)
+ 
+    Layer VIA1       =  1.03% (11     / 1072    vias)
+    Layer VIA2       =  0.00% (0      / 968     vias)
+    Layer VIA3       =  0.00% (0      / 42      vias)
+    Layer VIA4       =  0.00% (0      / 33      vias)
+    Layer VIA5       =  0.00% (0      / 24      vias)
+ 
+  The optimized via conversion rate based on total routed via count =  0.51% (11 / 2139 vias)
+ 
+    Layer VIA1       =  1.03% (11     / 1072    vias)
+        Weight 1     =  1.03% (11      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 98.97% (1061    vias)
+    Layer VIA2       =  0.00% (0      / 968     vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (968     vias)
+    Layer VIA3       =  0.00% (0      / 42      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (42      vias)
+    Layer VIA4       =  0.00% (0      / 33      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (33      vias)
+    Layer VIA5       =  0.00% (0      / 24      vias)
+        Un-optimized =  0.00% (0       vias)
+        Un-mapped    = 100.00% (24      vias)
+ 
+Topology ECO not run, no qualifying violations or in frozen nets.
+Updating the database ...
+...updated 11 nets with eco mode
+[ECO: End] Elapsed real time: 0:00:02 
+[ECO: End] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[ECO: End] Stage (MB): Used   -2  Alloctr   -2  Proc  135 
+[ECO: End] Total (MB): Used    0  Alloctr    1  Proc 8409 
+
+Route-opt ECO routing complete            CPU:    13 s (  0.00 hr )  ELAPSE:    30 s (  0.01 hr )  MEM-PEAK:   810 MB
+Co-efficient Ratio Summary:
+4.193421605155  6.578038173730  2.479639287277  7.744187540401  0.485050000353  3.179565833784  5.567214754587  2.894454387461  6.565921217863  9.017937505874  648.681210493398  6.343948796248  7.812327808527
+4.420834112383  1.811560490796  9.922502608324  6.462395006413  8.237022122693  8.718402961931  4.242940666909  6.875278996466  1.318072329441  4.657879322478  091.703311522191  1.351024771041  7.341441342700
+1.484438813840  4.500644403750  2.060531697663  4.588422996212  2.011679507759  6.784739677862  2.430567170402  3.879771500032  8.450958970596  1.115123714701  515.510022120513  5.512157638913  1.398299518372
+5.190997333443  6.408244586760  9.731622717389  4.385364966981  9.999761759148  7.347087763210  6.393266767907  8.063326983131  4.288630187880  5.817928323007  562.577142662700  3.732668315682  9.478055439281
+7.363161398525  4.405441002100  6.611012747185  8.965545707466  5.306356248788  0.882078268572  5.367847591334  1.826354090279  2.637726098236  5.283406261425  614.960511076652  9.199175285100  4.950544056796
+6.215027570618  5.626119813446  1.036181472312  1.071581675365  7.767486041822  1.079584562469  7.562041727387  1.193921160867  3.380650488682  3.459472458902  737.550078839499  4.489709965080  0.686045324445
+2.200010405169  1.909534590768  9.219704170951  2.091590006744  3.546609230842  6.814269005588  3.460719326522  4.824446379456  7.350487070545  1.168271601288  109.958567585109  9.395615894811  6.178558126838
+9.467726376521  1.699695327074  5.299466562623  0.909794097955  5.807261369931  1.313977635100  7.217096252547  5.159474176900  6.493222093711  0.170310435135  149.733896669582  6.730871153512  9.383223835021
+Information: The net parasitics of block Duplex are cleared. (TIM-123)
+Information: The stitching and editing of coupling caps is turned OFF for design 'Duplex:cts.design'. (TIM-125)
+Information: Design cts has 356 nets, 0 global routed, 354 detail routed. (NEX-024)
+Information: The RC mode used is DR for design 'Duplex'. (NEX-022)
+---extraction options---
+Corner: Slow_LowV_LT
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Corner: Fast_HighV_HT
+ late_cap_scale                : 1
+ late_res_scale                : 1
+ early_cap_scale               : 1
+ early_res_scale               : 1
+Global options:
+ reference_direction       : use_from_tluplus
+ real_metalfill_extraction : none
+ virtual_shield_extraction : true
+---app options---
+ host.max_cores                   : 1
+ extract.connect_open           : true
+ extract.enable_coupling_cap    : false
+Extracting design: cts 
+Information: coupling capacitance is lumped to ground. (NEX-030)
+Information: 354 nets are successfully extracted. (NEX-028)
+Warning: Advanced receiver model has not been enabled for detailed routed design. (TIM-204)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 354, routed nets = 354, across physical hierarchy nets = 0, parasitics cached nets = 354, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+
+Route-opt final QoR
+___________________
+Scenario Mapping Table
+1: Normal_Fast_HighV_HT
+2: Normal_Slow_LowV_LT
+
+Pathgroup Mapping Table
+1: **default**
+2: **async_default**
+3: **clock_gating_default**
+4: **in2reg_default**
+5: **reg2out_default**
+6: **in2out_default**
+7: clock
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+PATHGROUP QOR 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Scene  PG      WNS        TNS    NSV      WHV        THV    NHV
+    1   1   0.0000     0.0000      0   0.0000     0.0000      0
+    1   2   0.0000     0.0000      0   0.0000     0.0000      0
+    1   3   0.0000     0.0000      0   0.0000     0.0000      0
+    1   4   0.0000     0.0000      0   0.0000     0.0000      0
+    1   5   0.0000     0.0000      0   0.0000     0.0000      0
+    1   6   0.0000     0.0000      0   0.0000     0.0000      0
+    1   7   0.0000     0.0000      0   0.0000     0.0000      0
+    2   1   0.0000     0.0000      0        -          -      -
+    2   2   0.0000     0.0000      0        -          -      -
+    2   3   0.0000     0.0000      0        -          -      -
+    2   4   0.0000     0.0000      0        -          -      -
+    2   5   0.0000     0.0000      0        -          -      -
+    2   6   0.0000     0.0000      0        -          -      -
+    2   7   0.0000     0.0000      0        -          -      -
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SCENARIO QOR 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Scene  PG      WNS        TNS   R2RTNS    NSV      WHV        THV    NHV  MaxTrnV   MaxTranC  MaxCapV    Leakage
+    1   *   0.0000     0.0000   0.0000      0   0.0000     0.0000      0        0     0.0000        0 3382242304
+    2   *   0.0000     0.0000   0.0000      0        -          -      -        0     0.0000        0 6674194.00
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DESIGN QOR 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Scene  PG      WNS        TNS   R2RTNS    NSV      WHV        THV    NHV  MaxTrnV   MaxTranC  MaxCapV    Leakage         Area    InstCnt
+    *   *   0.0000     0.0000   0.0000      0   0.0000     0.0000      0        0     0.0000        0 3382242304       988.11        314
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Route-opt final QoR Summary         WNS        TNS   R2RTNS    NSV      WHV        THV    NHV  MaxTrnV  MaxCapV    Leakage         Area    InstCnt
+Route-opt final QoR Summary      0.0000     0.0000   0.0000      0   0.0000     0.0000      0        0        0 3382242304       988.11        314
+
+Route-opt optimization complete                 0.00        0.00      0.00         0        988.11  3382242304.00         314              0.01       810
+
+Route-opt command complete                CPU:    13 s (  0.00 hr )  ELAPSE:    30 s (  0.01 hr )  MEM-PEAK:   810 MB
+Route-opt command statistics  CPU=5 sec (0.00 hr) ELAPSED=5 sec (0.00 hr) MEM-PEAK=0.791 GB
+Information: Ending 'route_opt' (FLW-8001)
+Information: Time: 2026-02-13 01:52:41 / Session: 0.01 hr / Command: 0.00 hr / Memory: 810 MB (FLW-8100)
+1
+icc2_shell> 
+icc2_shell> connect_pg_net -automatic
+****************************************
+Report : Power/Ground Connection Summary
+Design : Duplex
+Version: U-2022.12-SP3
+Date   : Fri Feb 13 01:52:41 2026
+****************************************
+P/G net name                  P/G pin count(previous/current)
+--------------------------------------------------------------------------------
+Power net VDD                 314/314
+Ground net VSS                314/314
+--------------------------------------------------------------------------------
+Information: connections of 0 power/ground pin(s) are created or changed.
+1
+icc2_shell> 
+icc2_shell> check_pg_missing_vias
+Information: The command 'check_pg_missing_vias' cleared the undo history. (UNDO-016)
+Check net VDD vias...
+Number of missing vias: 0
+Checking net VDD vias took 0 seconds.
+Check net VSS vias...
+Number of missing vias: 0
+Checking net VSS vias took 0 seconds.
+Overall runtime: 0 seconds.
+icc2_shell> 
+icc2_shell> check_pg_connectivity
+Checking secondary net through power switch is enabled. 
+Secondary net will be checked together from primary net. They will be treated as the same net
+Primary Net : VDD    Secondary Net:
+Primary Net : VSS    Secondary Net:
+Loading cell instances...
+Number of Standard Cells: 314
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 0
+Loading P/G wires and vias...
+Number of VDD Wires: 44
+Number of VDD Vias: 153
+Number of VDD Terminals: 24
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 12
+  Number of floating vias: 2
+  Number of floating std cells: 291
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VSS Wires: 49
+Number of VSS Vias: 158
+Number of VSS Terminals: 24
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 10
+  Number of floating vias: 0
+  Number of floating std cells: 278
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 0
+************************************************************
+Overall runtime: 0 seconds.
+{PATH_11_0 PATH_11_1 PATH_11_2 PATH_11_3 PATH_11_4 PATH_11_5 PATH_11_6 PATH_11_8 PATH_11_9 PATH_11_11 PATH_11_12 PATH_11_13 PATH_11_14 PATH_11_15 PATH_11_16 PATH_11_17 PATH_11_18 PATH_11_19 PATH_11_20 PATH_11_21 PATH_11_22 PATH_13_1260 VIA_SA_296 VIA_S_1745}
+icc2_shell> 
+icc2_shell> save_block -as route
+Information: Overwriting block 'route.design' in library 'Duplex'. (DES-025)
+1
+icc2_shell> 
+icc2_shell> write_parasitics -format spef -output SPEF_13Feb_Duplex -no_name_mapping
+[icc2-lic Fri Feb 13 01:52:41 2026] Command 'write_parasitics' requires licenses
+Information: Design cts has 356 nets, 0 global routed, 354 detail routed. (NEX-024)
+NEX: extract design Duplex
+Information: batch extract takes 0.00 seconds, elapse 0.00 seconds (NEX-015)
+Information: The stitching and editing of coupling caps is turned OFF for design 'Duplex:cts.design'. (TIM-125)
+NEX: write corner ID 0 parasitics to SPEF_13Feb_Duplex.tlup_max_-40.spef 
+spefName SPEF_13Feb_Duplex.tlup_max_-40.spef, corner name Slow_LowV_LT 
+NEX: write corner ID 1 parasitics to SPEF_13Feb_Duplex.tlup_min_125.spef 
+spefName SPEF_13Feb_Duplex.tlup_min_125.spef, corner name Fast_HighV_HT 
+NEX:Warning write_parasitics supports only Ohm and kOhm as user resistance unit not 1MOhm, we force to set it Ohm.NEX: write_parasitics command finished
+icc2_shell> 
+icc2_shell> redirect -file "reports/${DESIGN_NAME}.route.qor.rpt" {report_qor}
+icc2_shell> 
+icc2_shell> redirect -file "reports/${DESIGN_NAME}.route.pwr.rpt" {set_scenario_status -dynamic_power true -leakage_power true [get_scenarios] ;report_power -nosplit -scenario [get_scenarios]}
+icc2_shell> 
+icc2_shell> redirect -file "reports/${DESIGN_NAME}.route.util.rpt" {report_utilization}
+icc2_shell> 
+icc2_shell> redirect -file "reports/${DESIGN_NAME}.route.drc.rpt" {check_routes -check_from_frozen_shapes true -check_from_user_shapes true}
+icc2_shell> 
+icc2_shell> redirect -file "reports/${DESIGN_NAME}.route.drc_without_preroutes.rpt" {check_routes}
+icc2_shell> 
+icc2_shell> redirect -file "reports/${DESIGN_NAME}.route.cmv.rpt" {check_mv_design -max_message_count 1000}
+icc2_shell> 
+icc2_shell> redirect -file "reports/${DESIGN_NAME}.route.va.rpt" {report_voltage_areas}
+icc2_shell> 
+icc2_shell> redirect -file "reports/${DESIGN_NAME}.route.congestion.rpt" { report_congestion }
+icc2_shell> 
+icc2_shell> redirect -file "reports/${DESIGN_NAME}.route.check_lvs" {check_lvs -max_errors 0}
+icc2_shell> 
+icc2_shell> redirect -file "reports/${DESIGN_NAME}.route.clock_qor" {report_clock_qor}
+icc2_shell> 
+icc2_shell> check_lvs -checks {open} > reports/${DESIGN_NAME}_opens.rpt
+icc2_shell> 
+icc2_shell> check_lvs -checks {short} > reports/${DESIGN_NAME}_short.rpt
+icc2_shell> 
+icc2_shell> check_routes -drc true > reports/${DESIGN_NAME}_drc_routes.rpt
+icc2_shell> 
+icc2_shell> write_verilog -compress gzip -exclude {scalar_wire_declarations leaf_module_declarations pg_objects end_cap_cells well_tap_cells filler_cells pad_spacer_cells physical_only_cells cover_cells} -hierarchy all outputs/${DESIGN_NAME}.route.v
+Error: Unable to open file 'outputs/Duplex.route.v.gz' for writing; . (FILE-003)
+Error: problem in write_verilog command
+        Use error_info for more info. (CMD-013)
+icc2_shell> 
+icc2_shell> 
+icc2_shell> 
+icc2_shell> write_verilog -compress gzip -exclude {scalar_wire_declarations leaf_module_declarations empty_modules filler_cells} -hierarchy all outputs/${DESIGN_NAME}.route.lvs.v
+Error: Unable to open file 'outputs/Duplex.route.lvs.v.gz' for writing; . (FILE-003)
+Error: problem in write_verilog command
+        Use error_info for more info. (CMD-013)
+icc2_shell> su
+Error: Required argument 'messages' was not found (CMD-007)
+icc2_shell> root123
+Error: unknown command 'root123' (CMD-005)
+icc2_shell> su
+Error: Required argument 'messages' was not found (CMD-007)
+icc2_shell> sudo
+Error: unknown command 'sudo' (CMD-005)
+icc2_shell> 

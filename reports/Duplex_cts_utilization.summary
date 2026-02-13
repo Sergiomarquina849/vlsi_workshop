@@ -1,0 +1,26 @@
+****************************************
+Report : report_utilization
+Design : Duplex
+Version: U-2022.12-SP3
+Date   : Thu Feb 12 05:32:26 2026
+****************************************
+Utilization Ratio:			0.7178
+Utilization options:
+ - Area calculation based on:		site_row of block Duplex
+ - Categories of objects excluded:	hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:				1375.4273
+Total Capacity Area:			1375.4273
+Total Area of cells:			987.3494
+Area of excluded objects:
+ - hard_macros         :		0.0000
+ - macro_keepouts      :		0.0000
+ - soft_macros         :		0.0000
+ - io_cells            :		0.0000
+ - hard_blockages      :		0.0000
+Total Area of excluded objects:		0.0000
+Ratio of excluded objects:		0.0000
+
+Utilization of site-rows with:
+ - Site 'unit':				0.7178
+
+0.7178

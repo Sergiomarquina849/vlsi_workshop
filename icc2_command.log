@@ -1,0 +1,39 @@
+#@ # 
+#@ # Running icc2_shell Version U-2022.12-SP3 for linux64 -- Apr 18, 2023
+#@ # Date:   Fri Feb 13 01:52:18 2026
+#@ # Run by: vlsi26@ece1.dayanandasagar.edu
+#@ 
+
+open_lib Duplex
+open_block cts
+link_block
+set DESIGN_NAME Duplex
+set_propagated_clock [all_clocks]
+current_scenario Normal_Slow_LowV_LT
+set_ignored_layers -min_routing_layer M2  -max_routing_layer M5
+route_auto
+route_opt
+connect_pg_net -automatic
+check_pg_missing_vias
+check_pg_connectivity
+save_block -as route
+write_parasitics -format spef -output SPEF_13Feb_Duplex -no_name_mapping
+redirect -file "reports/${DESIGN_NAME}.route.qor.rpt" {report_qor}
+redirect -file "reports/${DESIGN_NAME}.route.pwr.rpt" {set_scenario_status -dynamic_power true -leakage_power true [get_scenarios] ;report_power -nosplit -scenario [get_scenarios]}
+redirect -file "reports/${DESIGN_NAME}.route.util.rpt" {report_utilization}
+redirect -file "reports/${DESIGN_NAME}.route.drc.rpt" {check_routes -check_from_frozen_shapes true -check_from_user_shapes true}
+redirect -file "reports/${DESIGN_NAME}.route.drc_without_preroutes.rpt" {check_routes}
+redirect -file "reports/${DESIGN_NAME}.route.cmv.rpt" {check_mv_design -max_message_count 1000}
+redirect -file "reports/${DESIGN_NAME}.route.va.rpt" {report_voltage_areas}
+redirect -file "reports/${DESIGN_NAME}.route.congestion.rpt" { report_congestion }
+redirect -file "reports/${DESIGN_NAME}.route.check_lvs" {check_lvs -max_errors 0}
+redirect -file "reports/${DESIGN_NAME}.route.clock_qor" {report_clock_qor}
+check_lvs -checks {open} > reports/${DESIGN_NAME}_opens.rpt
+check_lvs -checks {short} > reports/${DESIGN_NAME}_short.rpt
+check_routes -drc true > reports/${DESIGN_NAME}_drc_routes.rpt
+write_verilog -compress gzip -exclude {scalar_wire_declarations leaf_module_declarations pg_objects end_cap_cells well_tap_cells filler_cells pad_spacer_cells physical_only_cells cover_cells} -hierarchy all outputs/${DESIGN_NAME}.route.v
+write_verilog -compress gzip -exclude {scalar_wire_declarations leaf_module_declarations empty_modules filler_cells} -hierarchy all outputs/${DESIGN_NAME}.route.lvs.v
+su
+root123
+su
+sudo

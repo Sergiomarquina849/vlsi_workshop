@@ -1,0 +1,24 @@
+Information: The stitching and editing of coupling caps is turned OFF for design 'Duplex:Duplex.design'. (TIM-125)
+Information: Update timing completed net estimation for all the timing graph nets (TIM-111)
+Information: Net estimation statistics: timing graph nets = 354, routed nets = 352, across physical hierarchy nets = 0, parasitics cached nets = 354, delay annotated nets = 0, parasitics annotated nets = 0, multi-voltage nets = 0. (TIM-112)
+****************************************
+Report : global timing
+        -format { narrow }
+Design : Duplex
+Version: U-2022.12-SP3
+Date   : Thu Feb 12 05:32:26 2026
+****************************************
+
+No setup violations found.
+
+
+Hold violations
+--------------------------------------------------------------
+          Total   reg->reg    in->reg   reg->out    in->out
+--------------------------------------------------------------
+WNS       -0.01       0.00       0.00       0.00      -0.01
+TNS       -0.01       0.00       0.00       0.00      -0.01
+NUM           1          0          0          0          1
+--------------------------------------------------------------
+
+1

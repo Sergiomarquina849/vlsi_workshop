@@ -1,0 +1,15 @@
+****************************************
+Report : congestion
+Design : Duplex
+Version: U-2022.12-SP3
+Date   : Fri Feb 13 01:52:42 2026
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |      40 |     5 |      15  ( 1.48%) |       2
+H routing |       1 |     1 |       1  ( 0.20%) |       1
+V routing |      39 |     5 |      14  ( 2.77%) |       2
+
+1

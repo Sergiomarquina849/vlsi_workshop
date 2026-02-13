@@ -1,0 +1,17 @@
+Warning: The congestion map is out dated. Specify -rerun_global_router option to regenerate one.
+
+****************************************
+Report : congestion
+Design : Duplex
+Version: U-2022.12-SP3
+Date   : Thu Feb 12 05:25:59 2026
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+Both Dirs |       1 |     1 |       1  ( 0.10%) |       1
+H routing |       1 |     1 |       1  ( 0.20%) |       1
+V routing |       0 |     0 |       0  ( 0.00%) |       0
+
+1

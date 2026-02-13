@@ -1,0 +1,6 @@
+SPEF_13Feb_Duplex.tlup_max_-40.spef for scenarios: 
+	 scenario: Normal_Slow_LowV_LT, corner type: late/early
+
+SPEF_13Feb_Duplex.tlup_min_125.spef for scenarios: 
+	 scenario: Normal_Fast_HighV_HT, corner type: late/early
+

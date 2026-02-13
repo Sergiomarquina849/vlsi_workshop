@@ -1,0 +1,110 @@
+[icc2-lic Thu Feb 12 05:25:59 2026] Command 'report_constraints' requires licenses
+[icc2-lic Thu Feb 12 05:25:59 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu Feb 12 05:25:59 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Thu Feb 12 05:25:59 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Thu Feb 12 05:25:59 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu Feb 12 05:25:59 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu Feb 12 05:25:59 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Thu Feb 12 05:25:59 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Thu Feb 12 05:25:59 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu Feb 12 05:25:59 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu Feb 12 05:25:59 2026] Check-out of alternate set of keys directly with queueing was successful
+[icc2-lic Thu Feb 12 05:25:59 2026] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu Feb 12 05:25:59 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Thu Feb 12 05:25:59 2026] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Thu Feb 12 05:25:59 2026] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Thu Feb 12 05:25:59 2026] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu Feb 12 05:25:59 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Thu Feb 12 05:25:59 2026] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Thu Feb 12 05:25:59 2026] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Thu Feb 12 05:25:59 2026] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Thu Feb 12 05:25:59 2026] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Thu Feb 12 05:25:59 2026] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : constraint
+        -all_violators
+Design : Duplex
+Version: U-2022.12-SP3
+Date   : Thu Feb 12 05:25:59 2026
+****************************************
+
+   late_timing
+   -----------
+
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+No paths.
+
+   early_timing
+   -----------
+
+Warning: Scenario Normal_Slow_LowV_LT is not configured for hold analysis: skipping. (UIC-058)
+Endpoint                         Path Delay     Path Required       CRP    Slack Group    Scenario
+----------------------------------------------------------------------------------------------------------
+error_flag[0] (out)                0.09 r         0.10           0.00    -0.01   **in2out_default**
+                                                                                          Normal_Fast_HighV_HT
+
+   Mode: Normal Corner: Fast_HighV_HT
+   Scenario: Normal_Fast_HighV_HT
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   Reciever/Unit2/frame_counter[0]
+                                0.06           0.04           0.02  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Mode: Normal Corner: Slow_LowV_LT
+   Scenario: Normal_Slow_LowV_LT
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   Transmitter/baud_clk_w       0.25           0.21           0.04  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Mode: Normal Corner: Fast_HighV_HT
+   Scenario: Normal_Fast_HighV_HT
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Mode: Normal Corner: Slow_LowV_LT
+   Scenario: Normal_Slow_LowV_LT
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+
+
+  Mode: Normal
+  Corner: Fast_HighV_HT
+  Scenario: Normal_Fast_HighV_HT
+
+  ---------------------------------------------------------------------------
+   Number of min_pulse_width violation(s): 0
+  Mode: Normal
+  Corner: Slow_LowV_LT
+  Scenario: Normal_Slow_LowV_LT
+
+  ---------------------------------------------------------------------------
+   Number of min_pulse_width violation(s): 0
+   Total number of violation(s): 0
+1
