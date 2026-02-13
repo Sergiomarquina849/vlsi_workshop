@@ -1,0 +1,119 @@
+ 
+                              Library Manager (TM)
+
+                Version U-2022.12-SP3 for linux64 - Apr 18, 2023
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+set search_path {/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/ /home/synopsys/SAED-32mm/SAED32_EDK/tech/tf/ .}
+/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/ /home/synopsys/SAED-32mm/SAED32_EDK/tech/tf/ .
+setenv RUN_RESULT /tmp/.tARL15420/_rrN1ykP3
+/tmp/.tARL15420/_rrN1ykP3
+set_current_mismatch_config auto_fix
+1
+set_app_options -name lib.workspace.build_script -value CLIBs/.scripts/saed32rvt_c.tcl
+lib.workspace.build_script CLIBs/.scripts/saed32rvt_c.tcl
+#suppress_messages
+source -echo -verbose CLIBs/.scripts/saed32rvt_c.tcl
+set NDM_LIBS {}
+set FRAME_LIBS {/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/ndm/saed32rvt_frame_only.ndm}
+/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/ndm/saed32rvt_frame_only.ndm
+set LEF_FILES {}
+set DB_FILES {/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p75vn40c.db /home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff0p95v125c.db}
+/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p75vn40c.db /home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff0p95v125c.db
+set TECH_FILE "/home/synopsys/SAED-32nm/SAED32_EDK/tech/tf/saed32nm_1p9m.tf"
+/home/synopsys/SAED-32nm/SAED32_EDK/tech/tf/saed32nm_1p9m.tf
+set_app_options -name lib.workspace.create_cached_lib -value true
+lib.workspace.create_cached_lib true
+#suppress_messages
+set_app_options -name lib.workspace.allow_read_aggregate_lib -value true
+lib.workspace.allow_read_aggregate_lib true
+create_workspace saed32rvt_c -scale_factor 10000
+... created workspace saed32rvt_c
+foreach frame $FRAME_LIBS {
+  read_ndm $frame
+}
+Information: Loading library file '/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/ndm/saed32rvt_frame_only.ndm' (FILE-007)
+read_db $DB_FILES
+Information: Loading db file '/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p75vn40c.db' (FILE-007)
+Information: Loading db file '/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ff0p95v125c.db' (FILE-007)
+{saed32rvt_ss0p75vn40c saed32rvt_ff0p95v125c}
+process_workspaces -check_options {-allow_missing} -force -directory CLIBs -output saed32rvt_c.ndm
+Checking libraries...
+Using saed32rvt_ss0p75vn40c as the base library.
+Warning: Library saed32rvt_ss0p75vn40c has 465 duplicate arc(s) (LM-006)
+Warning: Library saed32rvt_ff0p95v125c has 930 duplicate arc(s) (LM-006)
+Information: Deriving related power/ground pin for cell RDFFNSRARX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFNSRARX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFNSRASRNX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFNSRASRNX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFNSRASRQX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFNSRASRQX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFNSRASRX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFNSRASRX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFNSRASX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFNSRASX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFNSRX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFNSRX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFSRARX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFSRARX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFSRASRX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFSRASRX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFSRASX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFSRASX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFSRSSRX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFSRX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RDFFSRX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFNSRARX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFNSRARX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFNSRASRNX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFNSRASRNX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFNSRASRQX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFNSRASRQX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFNSRASRX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFNSRASRX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFNSRASX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFNSRASX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFNSRX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFNSRX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFSRARX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFSRARX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFSRASRX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFSRASRX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFSRASX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFSRASX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFSRSSRX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFSRSSRX2_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFSRX1_RVT. (LM-175)
+Information: Deriving related power/ground pin for cell RSDFFSRX2_RVT. (LM-175)
+Information: Combined 294 physical designs:294 with a frame view (283 had ports reordered); (LM-034)
+Information: Skipped 56 physical designs (LM-052)
+
+Workspace check succeeded!
+... wrote CLIBs/saed32rvt_c.ndm
+... removing library 'saed32rvt_ss0p75vn40c'
+... removing library 'saed32rvt_ff0p95v125c'
+... removing library 'saed32rvt_frame_only'
+... lib workspace removed!
+Maximum memory usage for this session: 273.82 MB
+CPU usage for this session:      1 seconds (  0.00 hours)
+Elapsed time for this session:      6 seconds (  0.00 hours)
+Thank you for using Library Manager.
+

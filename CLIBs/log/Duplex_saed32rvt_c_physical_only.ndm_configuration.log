@@ -1,0 +1,128 @@
+ 
+                              Library Manager (TM)
+
+                Version U-2022.12-SP3 for linux64 - Apr 18, 2023
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+set search_path {/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/ /home/synopsys/SAED-32mm/SAED32_EDK/tech/tf/ .}
+/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/db_nldm/ /home/synopsys/SAED-32mm/SAED32_EDK/tech/tf/ .
+setenv RUN_RESULT /tmp/.tARL15420/_rrIcTa9n
+/tmp/.tARL15420/_rrIcTa9n
+set_current_mismatch_config auto_fix
+1
+set_app_options -name lib.workspace.build_script -value CLIBs/.scripts/saed32rvt_c_physical_only.tcl
+lib.workspace.build_script CLIBs/.scripts/saed32rvt_c_physical_only.tcl
+#suppress_messages
+source -echo -verbose CLIBs/.scripts/saed32rvt_c_physical_only.tcl
+set NDM_LIBS {}
+set FRAME_LIBS {/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/ndm/saed32rvt_frame_only.ndm}
+/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/ndm/saed32rvt_frame_only.ndm
+set LEF_FILES {}
+set DB_FILES {}
+set TECH_FILE "/home/synopsys/SAED-32nm/SAED32_EDK/tech/tf/saed32nm_1p9m.tf"
+/home/synopsys/SAED-32nm/SAED32_EDK/tech/tf/saed32nm_1p9m.tf
+set_app_options -name lib.workspace.create_cached_lib -value true
+lib.workspace.create_cached_lib true
+set_app_options -name lib.workspace.include_design_filters -value {FOOT2X16_RVT FOOT2X2_RVT FOOT2X32_RVT FOOT2X4_RVT FOOT2X8_RVT FOOTX16_RVT FOOTX2_RVT FOOTX32_RVT FOOTX4_RVT FOOTX8_RVT HEAD2X16_RVT HEAD2X2_RVT HEAD2X32_RVT HEAD2X4_RVT HEAD2X8_RVT HEADX16_RVT HEADX2_RVT HEADX32_RVT HEADX4_RVT HEADX8_RVT LSDNENCLSSX1_RVT LSDNENCLSSX2_RVT LSDNENCLSSX4_RVT LSDNENCLSSX8_RVT LSDNENCLX1_RVT LSDNENCLX2_RVT LSDNENCLX4_RVT LSDNENCLX8_RVT LSDNENSSX1_RVT LSDNENSSX2_RVT LSDNENSSX4_RVT LSDNENSSX8_RVT LSDNENX1_RVT LSDNENX2_RVT LSDNENX4_RVT LSDNENX8_RVT LSDNSSX1_RVT LSDNSSX2_RVT LSDNSSX4_RVT LSDNSSX8_RVT LSDNX1_RVT LSDNX2_RVT LSDNX4_RVT LSDNX8_RVT LSUPENCLX1_RVT LSUPENCLX2_RVT LSUPENCLX4_RVT LSUPENCLX8_RVT LSUPENX1_RVT LSUPENX2_RVT LSUPENX4_RVT LSUPENX8_RVT LSUPX1_RVT LSUPX2_RVT LSUPX4_RVT LSUPX8_RVT}
+lib.workspace.include_design_filters {FOOT2X16_RVT FOOT2X2_RVT FOOT2X32_RVT FOOT2X4_RVT FOOT2X8_RVT FOOTX16_RVT FOOTX2_RVT FOOTX32_RVT FOOTX4_RVT FOOTX8_RVT HEAD2X16_RVT HEAD2X2_RVT HEAD2X32_RVT HEAD2X4_RVT HEAD2X8_RVT HEADX16_RVT HEADX2_RVT HEADX32_RVT HEADX4_RVT HEADX8_RVT LSDNENCLSSX1_RVT LSDNENCLSSX2_RVT LSDNENCLSSX4_RVT LSDNENCLSSX8_RVT LSDNENCLX1_RVT LSDNENCLX2_RVT LSDNENCLX4_RVT LSDNENCLX8_RVT LSDNENSSX1_RVT LSDNENSSX2_RVT LSDNENSSX4_RVT LSDNENSSX8_RVT LSDNENX1_RVT LSDNENX2_RVT LSDNENX4_RVT LSDNENX8_RVT LSDNSSX1_RVT LSDNSSX2_RVT LSDNSSX4_RVT LSDNSSX8_RVT LSDNX1_RVT LSDNX2_RVT LSDNX4_RVT LSDNX8_RVT LSUPENCLX1_RVT LSUPENCLX2_RVT LSUPENCLX4_RVT LSUPENCLX8_RVT LSUPENX1_RVT LSUPENX2_RVT LSUPENX4_RVT LSUPENX8_RVT LSUPX1_RVT LSUPX2_RVT LSUPX4_RVT LSUPX8_RVT}
+#suppress_messages
+set_app_options -name lib.workspace.allow_read_aggregate_lib -value true
+lib.workspace.allow_read_aggregate_lib true
+create_workspace saed32rvt_c_physical_only -flow physical_only -scale_factor 10000
+... created workspace saed32rvt_c_physical_only in physical_only flow
+foreach frame $FRAME_LIBS {
+  read_ndm $frame
+}
+Information: Loading library file '/home/synopsys/SAED-32nm/SAED32_EDK/lib/stdcell_rvt/ndm/saed32rvt_frame_only.ndm' (FILE-007)
+... including LSUPX1_RVT/frame
+... including LSUPX2_RVT/frame
+... including LSUPX4_RVT/frame
+... including LSUPX8_RVT/frame
+... including LSDNSSX8_RVT/frame
+... including LSDNX1_RVT/frame
+... including LSDNX2_RVT/frame
+... including LSDNX4_RVT/frame
+... including LSDNX8_RVT/frame
+... including LSUPENCLX1_RVT/frame
+... including LSUPENCLX2_RVT/frame
+... including LSUPENCLX4_RVT/frame
+... including LSUPENCLX8_RVT/frame
+... including LSUPENX1_RVT/frame
+... including LSUPENX2_RVT/frame
+... including LSUPENX4_RVT/frame
+... including LSUPENX8_RVT/frame
+... including LSDNENCLX4_RVT/frame
+... including LSDNENCLX8_RVT/frame
+... including LSDNENSSX1_RVT/frame
+... including LSDNENSSX2_RVT/frame
+... including LSDNENSSX4_RVT/frame
+... including LSDNENSSX8_RVT/frame
+... including LSDNENX1_RVT/frame
+... including LSDNENX2_RVT/frame
+... including LSDNENX4_RVT/frame
+... including LSDNENX8_RVT/frame
+... including LSDNSSX1_RVT/frame
+... including LSDNSSX2_RVT/frame
+... including LSDNSSX4_RVT/frame
+... including LSDNENCLSSX1_RVT/frame
+... including LSDNENCLSSX2_RVT/frame
+... including LSDNENCLSSX4_RVT/frame
+... including LSDNENCLSSX8_RVT/frame
+... including LSDNENCLX1_RVT/frame
+... including LSDNENCLX2_RVT/frame
+... including HEADX2_RVT/frame
+... including HEADX32_RVT/frame
+... including HEADX4_RVT/frame
+... including HEADX8_RVT/frame
+... including FOOTX16_RVT/frame
+... including FOOTX2_RVT/frame
+... including FOOTX32_RVT/frame
+... including FOOTX4_RVT/frame
+... including FOOTX8_RVT/frame
+... including HEAD2X16_RVT/frame
+... including HEAD2X2_RVT/frame
+... including HEAD2X32_RVT/frame
+... including HEAD2X4_RVT/frame
+... including HEAD2X8_RVT/frame
+... including HEADX16_RVT/frame
+... including FOOT2X16_RVT/frame
+... including FOOT2X2_RVT/frame
+... including FOOT2X32_RVT/frame
+... including FOOT2X4_RVT/frame
+... including FOOT2X8_RVT/frame
+process_workspaces -check_options {-allow_missing} -force -directory CLIBs -output saed32rvt_c_physical_only.ndm
+Warning: Cannot specify the -allow_missing option in the physical_only flow. It is ignored.  (LMUI-009)
+Checking libraries...
+Building a physical-only workspace...
+... looking for physical-only designs ...
+Information: Copied 56 physical designs (LM-050)
+
+Workspace check succeeded!
+... wrote CLIBs/saed32rvt_c_physical_only.ndm
+... removing library 'saed32rvt_frame_only'
+... lib workspace removed!
+
+Warning: EMS database "check_workspace.ems" already exists, over-writing it. (EMS-040)
+Maximum memory usage for this session: 111.93 MB
+CPU usage for this session:      0 seconds (  0.00 hours)
+Elapsed time for this session:      4 seconds (  0.00 hours)
+Thank you for using Library Manager.
+
